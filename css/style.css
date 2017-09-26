@@ -20,8 +20,16 @@ body a{
 	background:url(../images/baner.jpg) no-repeat;
 	background-size:cover;
 	background-position: right top;
+	height: 100vh;
+	display: table;
+	width: 100%;
 }
 .header{
+	display: table-row;
+	height: min-content;
+}
+.banner{
+	display: table-row;
 }
 .logo{
 	float: left;
@@ -177,8 +185,10 @@ nav a#pull {
 	}
 }
 /*---- benner ----*/
-.banner-info{
-	padding: 5em 0 9.5em;
+.banner-info {
+    padding: 5em 0 9.5em;
+    width: 80%;
+    margin: 0 auto;
 }
 .banner-info h1{
 	font-weight: 700;

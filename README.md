@@ -1,2 +1,0 @@
-# liguesemparar
-Site da liguesemparar
