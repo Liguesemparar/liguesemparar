@@ -24,6 +24,58 @@ body a{
 	display: table;
 	width: 100%;
 }
+
+.bg:after {
+    content: '';
+    display: block;
+    background: url(../images/arrow-down.png) no-repeat center center;
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+    margin: auto;
+    -webkit-animation-name: pulse_animation;
+    animation-name: pulse_animation;
+    -webkit-animation-duration: 3000ms;
+    animation-duration: 3000ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes pulse_animation {
+	0% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0); 
+	}
+	50% {
+		-webkit-transform: scale(1.2) translate(0px, -15px);
+		transform: scale(1.2) translate(0px, -15px); 
+	}
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0); 
+	} 
+}
+
+@keyframes pulse_animation {
+	0% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0); 
+	}
+	50% {
+		-webkit-transform: scale(1.2) translate(0px, -15px);
+		transform: scale(1.2) translate(0px, -15px); 
+	}
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0); 
+	} 
+}
+
 .header{
 	display: table-row;
 	height: min-content;
@@ -198,7 +250,7 @@ nav a#pull {
 /*---- benner ----*/
 .banner-info {
     padding: 5em 0 9.5em;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 .banner-info h1{
@@ -212,7 +264,7 @@ nav a#pull {
 }
 .banner-info span{
 	width:15%;
-	height:1px;
+	height:2px;
 	background: #ffffff;
 	display:inline-block;
 }
