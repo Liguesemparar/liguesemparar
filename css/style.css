@@ -1,8 +1,8 @@
 html, body{
-  	font-family: 'Montserrat', sans-serif;
-    font-size: 100%;
-  	 background: #FFf;
-  	 -webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+	background: #FFf;
+	-webkit-font-smoothing: antialiased;
 }
 body a{
 	transition:0.5s all;
@@ -26,24 +26,24 @@ body a{
 }
 
 .bg:after {
-    content: '';
-    display: block;
-    background: url(../images/arrow-down.png) no-repeat center center;
-    width: 20px;
-    height: 22px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    margin: auto;
-    -webkit-animation-name: pulse_animation;
-    animation-name: pulse_animation;
-    -webkit-animation-duration: 3000ms;
-    animation-duration: 3000ms;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease;
-    animation-timing-function: ease;
+	content: '';
+	display: block;
+	background: url(../images/arrow-down.png) no-repeat center center;
+	width: 20px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 25px;
+	margin: auto;
+	-webkit-animation-name: pulse_animation;
+	animation-name: pulse_animation;
+	-webkit-animation-duration: 3000ms;
+	animation-duration: 3000ms;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease;
+	animation-timing-function: ease;
 }
 
 @-webkit-keyframes pulse_animation {
@@ -121,7 +121,6 @@ body a{
 .top-nav ul li a:hover{
 	color:#fff;
 	box-shadow: inset 0 -5px 0 0 white; 
-
 }
 
 .top-nav ul li a:link {
@@ -138,11 +137,11 @@ body a{
 /* top-nav */
 .top-nav:before,
 .top-nav:after {
-    content: " ";
-    display: table;
+	content: " ";
+	display: table;
 }
 .top-nav:after {
-    clear: both;
+	clear: both;
 }
 nav {
 	position: relative;
@@ -175,25 +174,25 @@ nav a#pull {
 /*Styles for screen 600px and lower*/
 @media screen and (max-width: 768px) {
 	nav { 
-  		height: auto;
-  		float:none;
-  	}
-  	nav ul {
-  		width: 100%;
-  		display: block;
-  		height: auto;
-  	}
-  	nav li {
-  		width: 100%;
-  		position: relative;
-  	}
-  	nav li a {
+		height: auto;
+		float:none;
+	}
+	nav ul {
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+	nav li {
+		width: 100%;
+		position: relative;
+	}
+	nav li a {
 		border-bottom: 1px solid #eee;
 	}
-  	nav a {
-	  	text-align: left;
-	  	width: 100%;
-  	}
+	nav a {
+		text-align: left;
+		width: 100%;
+	}
 }
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width : 768px) {
@@ -248,10 +247,34 @@ nav a#pull {
 	}
 }
 /*---- benner ----*/
+.btn-hero {
+	border: 2px solid #fff;
+	padding: 10px 28px;
+	color: #fff;
+	position: relative;
+	top: 25px;
+	font-weight: 700;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+.btn-hero:hover, .btn-hero:link, .btn-hero:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-hero:hover {
+	border: 5px solid #fff;
+
+}
+
 .banner-info {
-    padding: 5em 0 9.5em;
-    width: 70%;
-    margin: 0 auto;
+	padding: 5em 0 9.5em;
+	width: 70%;
+	margin: 0 auto;
 }
 .banner-info h1{
 	font-weight: 700;
