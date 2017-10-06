@@ -285,7 +285,7 @@ nav a#pull {
 	display: inline-block;
 	line-height: 1.3em;
 }
-.banner-info span{
+.banner-info .span-line{
 	width:15%;
 	height:2px;
 	background: #ffffff;

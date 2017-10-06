@@ -31,6 +31,29 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 			});
 		</script>
+		<style type="text/css">
+			.typed-cursor{
+			  opacity: 1;
+			  animation: typedjsBlink 0.7s infinite;
+			  -webkit-animation: typedjsBlink 0.7s infinite;
+					  animation: typedjsBlink 0.7s infinite;
+			}
+			@keyframes typedjsBlink{
+			  50% { opacity: 0.0; }
+			}
+			@-webkit-keyframes typedjsBlink{
+			  0% { opacity: 1; }
+			  50% { opacity: 0.0; }
+			  100% { opacity: 1; }
+			}
+		  
+			.typed-fade-out{
+			  opacity: 0;
+			  transition: opacity .25s;
+			  -webkit-animation: 0;
+					  animation: 0;
+			}
+		  </style>
 		 <!---- start-smoth-scrolling---->
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
    		 <!-- Custom Theme files -->
@@ -90,8 +113,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="banner wow fadeIn" data-wow-delay="0.5s">
 				<div class="container" style="display: table-cell;vertical-align: middle;">
 					<div class="banner-info text-center">
-						<h1>Telefonia de qualidade<br>para o seu negócio</h1><br />
-						<span></span>
+						<h1>Telefonia <span class="typed"></span><br>para o seu negócio</h1><br />
+						<span class="span-line"></span>
 						<p>Temos a solução de baixo custo que vem de encontro com a sua necessidade em comunicação.</p>
 						<a href="#services" class="btn-hero scroll">SAIBA MAIS</a>
 					</div>
@@ -439,6 +462,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			</div>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+		<script type="text/javascript">
+			var typed = new Typed('.typed', {
+					strings: ["de qualidade", "digital"],
+					typeSpeed: 60,
+					backSpeed: 50,
+					backDelay: 2000,
+					loop: true,
+					autoInsertCss: true
+				});
+		</script>
 	</body>
 </html>
 
