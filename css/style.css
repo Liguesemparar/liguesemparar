@@ -356,7 +356,7 @@ nav a#pull {
 	background: url(../images/expert.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	background-position: center;
-	min-height: 788px;
+	min-height: 818px;
 }
 .expertise-head h3{
 	font-weight: 900;
@@ -988,7 +988,7 @@ a.leran-more:hover{
 		padding: 2.4em 1em 0em 1em;
 	}
 	.banner-info h1 {
-		font-size: 3.2em;
+		font-size: 2.8em;
 		width: 80%;
 	}
 	.banner-info p {
@@ -1013,7 +1013,18 @@ a.leran-more:hover{
 	.about-time-line:before {
 		left: 52%;
 	}
+	.expertice-right-grid {
+		min-height: 1088px;
+	}
 }
+
+@media (max-width: 991px) {
+	.expertice-left-grid {
+		padding: 3em 3em 0em 5em;
+	}
+	.expertice-right-grid {display: none;}
+}
+
 @media (max-width:768px){
 	.container{
 		width:80%;
@@ -1022,7 +1033,7 @@ a.leran-more:hover{
 		padding: 2.4em 1em 0em 1em;
 	}
 	.banner-info h1 {
-		font-size: 2.8em;
+		font-size: 2.3em;
 		width: 100%;
 	}
 	.banner-info p {
@@ -1099,6 +1110,12 @@ a.leran-more:hover{
 	}
 	.contact-left{
 		margin:0 0 1em 0;
+	}
+	.e-left-inner-grid {
+		height: 170px;
+	}
+	.expertice-right-grid {
+		min-height: 270px;
 	}
 }
 @media (max-width:640px){
@@ -1205,7 +1222,7 @@ a.leran-more:hover{
 		padding: 3em 0 4em;
 	}
 	.banner-info h1 {
-		font-size: 1.7em;
+		font-size: 1.0em;
 		width: 100%;
 	}
 	.banner-info p {
@@ -1332,11 +1349,13 @@ a.leran-more:hover{
 	}
 	.banner-info {
 		padding: 2em 0 3em;
+		width: 
 	}
 	.banner-info h1 {
-		font-size: 1.2em;
+		font-size: 1.0em;
 		width: 100%;
 	}
+
 	.banner-info p {
 		width: 100%;
 		font-size: 0.875em;
@@ -1499,4 +1518,11 @@ a.leran-more:hover{
 	color: #fb5e33;
 	text-align: center;
 	display: inherit;
+}
+
+.contact-left-grid .fa {
+	font-size: 30px;
+	width: 30px;
+	margin-right: 15px;
+
 }
