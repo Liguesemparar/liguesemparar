@@ -3,17 +3,16 @@
 <head>
 	<title>Liguesempapar - Telefonia IP de verdade</title>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
-	<!-- Custom Theme files -->
-	<!---- animated-css ---->
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" type="text/css" media="all">
 	<script src="https://use.fontawesome.com/4b4b4635d0.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script>
 		new WOW().init();
 	</script>
 	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {
@@ -46,12 +45,8 @@
 		animation: 0;
 	}
 </style>
-<!---- start-smoth-scrolling---->
 <link href="css/style.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-</script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <script>
@@ -75,7 +70,6 @@
 </head>
 <body>
 	<div class="bg">
-
 		<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
 			<div class="top-header">
 				<div class="container">
@@ -138,8 +132,8 @@
 				<div class="col-md-3">
 					<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
 						<img src="images/custom.svg" class="service-icon">
-						<h3 style="width: 297px;"><a href="#">Projetos customizáveis</a></h3>
-						<p>Analisamos sua organização e entregar um planejamento com a maior redução de custo em telefonia.</p>
+						<h3><a href="#">Projetos</a></h3>
+						<p>Analisamos sua organização e entregamos um planejamento de acordo com sua necessidade.</p>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -183,7 +177,7 @@
 						</div>
 						<div class="e-left-inner-grid-right">
 							<h4>Mobilidade</h4>
-							<p>Pelo computador, celular, telefone fixo, na central PABX ou Asterisk. Escolha a melhor forma para economizar.</p>
+							<p>Pelo computador, celular, telefone fixo, na central PABX ou Asterisk. Faça sua escolha!</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -242,35 +236,26 @@
 				<div class="col-md-6">
 					<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
 						<h3>FALE CONOSCO</h3>
-						<label>Don't be shy, drop us an email and say hello! We are a really nice bunch of people :)</label>
+						<label style="display: none;">Don't be shy, drop us an email and say hello! We are a really nice bunch of people :)</label>
 						<div class="contact-left-grids">
 							<div class="col-md-6">
 								<div class="contact-left-grid">
-									<p><span class="c-mobi"> </span>(416) 555-0000</p>
-									<p><span class="c-twitter"> </span><a href="#">@dreams</a></p>
-									<p><span class="c-pluse"> </span><a href="#">plus.com/dreams</a></p>
+									<p><i class="fa fa-phone" aria-hidden="true"></i>(24) 3323-9824</p>
+									<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:ligue@liguesemparar.com.br">ligue@liguesemparar.com.br</a></p>
+									<p><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/liguesemparar">facebook.com/liguesemparar</a></p>
 								</div>
 							</div>
-							<div class="col-md-6">
-								<div class="contact-right-grid">
-									<p><span class="c-msg"> </span><a href="mailto:hello@dreams.com">hello@dreams.com</a></p>
-									<p><span class="c-face"> </span><a href="#">facebook.com/dreams</a></p>
-									<p><span class="c-pin"> </span><a href="#">pinterest.com/dreams</a></p>
-								</div>
-							</div>
+					
 							<div class="clearfix"> </div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="contact-right wow fadeInLeft" data-wow-delay="0.4s">
-						<form  id="form" name="form" method="POST" action=""> 
+						<form id="contact-form" action="//formspree.io/tulio.sciotta@gmail.com" method="post">
 							<input type="text" name="nome" id="txt_nome" class="text" value="Nome..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name...';}">
 							<input type="text" name="email" id="txt_email" class="text" value="Email..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email...';}">
 							<textarea name="msg" id="txt_msg" value="Mensagem:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensagem';}">Mensagem..</textarea>
-							<input type="hidden" name="_subject" value="Contato via Site LigueSemParar">
-							<input type="hidden" name="_confirmation" value="Show de bola!!">
-							<input type="hidden" name="_honeypot" value="">
 							<input class="wow shake" data-wow-delay="0.3s" type="submit" value="Enviar" />
 						</form>
 					</div>
@@ -294,17 +279,44 @@
 </script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$('#form').submit(function(e) {
-			$.post('https://mailthis.to/tulio.sciotta@gmail.com', {
-				nome: 'teste',
-				email: 'sciottabm@gmail.com',
-				message: 'adadasdasdasas'
-			}).then(function () {
-				location.href = 'https://mailthis.to/confirm'
-			});
-			
+
+		toastr.options = {
+			"closeButton": true,
+			"debug": false,
+			"newestOnTop": true,
+			"progressBar": true,
+			"positionClass": "toast-bottom-right",
+			"preventDuplicates": true,
+			"onclick": null,
+			"showDuration": "300",
+			"hideDuration": "1000",
+			"timeOut": "10000",
+			"extendedTimeOut": "1000",
+			"showEasing": "swing",
+			"hideEasing": "linear",
+			"showMethod": "fadeIn",
+			"hideMethod": "fadeOut"
+		}
+
+		var $contactForm = $('#contact-form');
+		$contactForm.submit(function(e) {
 			e.preventDefault();
+			$.ajax({
+				url: '//formspree.io/debora@liguesemparar.com.br',
+				method: 'POST',
+				data: $(this).serialize(),
+				dataType: 'json',
+				success: function(data) {
+					toastr.clear()
+					toastr["success"]("Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.")
+				},
+				error: function(err) {
+					toastr.clear()
+					toastr["error"]("Não conseguimos enviar sua mensagem, tente novamente!")
+				}
+			});
 		});
+
 	});
 </script>
 </body>
