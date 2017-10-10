@@ -1341,6 +1341,9 @@ a.leran-more:hover{
 	}
 }
 @media (max-width:320px){
+	.logo img {
+		height: 30px;
+	}
 	.container{
 		width:90%;
 	}
@@ -1514,10 +1517,10 @@ a.leran-more:hover{
 
 .item-vantagem {
 	margin-top: 0.2em;
-	font-size: 40px;
+	font-size: 40px!important;
 	color: #fb5e33;
 	text-align: center;
-	display: inherit;
+	display: inherit!important;
 }
 
 .contact-left-grid .fa {
@@ -1525,4 +1528,32 @@ a.leran-more:hover{
 	width: 30px;
 	margin-right: 15px;
 
+}
+
+@media (max-width: 425px) {
+	.contact-left-grid .fa {
+		display: none;
+	}
+}
+
+.typed-cursor{
+	opacity: 1;
+	animation: typedjsBlink 0.7s infinite;
+	-webkit-animation: typedjsBlink 0.7s infinite;
+	animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink{
+	50% { opacity: 0.0; }
+}
+@-webkit-keyframes typedjsBlink{
+	0% { opacity: 1; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1; }
+}
+
+.typed-fade-out{
+	opacity: 0;
+	transition: opacity .25s;
+	-webkit-animation: 0;
+	animation: 0;
 }
