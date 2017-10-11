@@ -17,7 +17,7 @@ body a{
 }
 /*-----start-header----*/
 .bg{
-	background:url(../images/baner.jpg) no-repeat;
+	background:url(../images/banner.jpg) no-repeat;
 	background-size:cover;
 	background-position: right top;
 	height: 100vh;
@@ -303,7 +303,7 @@ nav a#pull {
 /*---- services ----*/
 .services{
 	padding:3em 0;
-	background: url(../images/bg.png);
+	background: url(../images/bg.jpg);
 }
 .service-head h2{
 	font-weight:900;
@@ -821,6 +821,7 @@ a.leran-more:hover{
 	font-size: 1.1em;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0.8em 0;
+	width: 325px;
 }
 .contact-left-grid p a{
 	text-decoration:none;

@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
 	<meta name="description" content="LigueSemParar - Reduza em até 80% o custo de ligações com a LigueSemParar." />
 	<meta name="robots" content="index, follow">
 	<meta name="language" content="pt-br" />
@@ -11,19 +10,18 @@
 	<meta property="og:url" content="http://www.liguesemparar.com.br/"/>
 	<!--<meta property="og:image" content="#"/>-->
 	<meta property="og:description" content="Reduza em até 80% o custo de ligações com a LigueSemParar."/>
-	<meta property=”og:url” content=”http://www.example.com/” />
-	<meta property=”og:image” content=”http://example.com/image.jpg” />
-	<meta property=”og:description” content=”Descrição da Página” />
 	<title>LigueSemParar - Telefonia IP de Verdade</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	
+	<!-- build:css css/app.css -->
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/toastr.min.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<!-- endbuild -->
 
-	<meta name="google-site-verification" content="dREQvYnrv6D2ilHuskVeLl8QAVsavOX3f38cd-gSJ6s" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107853918-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -231,87 +229,14 @@
 	</div>
 </div>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- build:js js/3rd.js -->
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="js/fontawesome.js"></script>
-<script type="text/javascript" src="js/wow.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/toastr.min.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/typed.min.js"></script>
-<script type="text/javascript">
-
-	new WOW().init();
-
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-
-		toastr.options = {
-			"closeButton": true,
-			"debug": false,
-			"newestOnTop": true,
-			"progressBar": true,
-			"positionClass": "toast-bottom-right",
-			"preventDuplicates": true,
-			"onclick": null,
-			"showDuration": "300",
-			"hideDuration": "1000",
-			"timeOut": "10000",
-			"extendedTimeOut": "1000",
-			"showEasing": "swing",
-			"hideEasing": "linear",
-			"showMethod": "fadeIn",
-			"hideMethod": "fadeOut"
-		}
-
-		var $contactForm = $('#contact-form');
-		$contactForm.submit(function(e) {
-			e.preventDefault();
-			$.ajax({
-				url: '//formspree.io/debora@liguesemparar.com.br,
-				method: 'POST',
-				data: $(this).serialize(),
-				dataType: 'json',
-				success: function(data) {
-					toastr.clear()
-					toastr["success"]("Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.")
-				},
-				error: function(err) {
-					toastr.clear()
-					toastr["error"]("Não conseguimos enviar sua mensagem, tente novamente!")
-				}
-			});
-		});
-
-	});
-
-	$(function() {
-		var pull 		= $('#pull');
-		menu 		= $('nav ul');
-		menuHeight	= menu.height();
-		$(pull).on('click', function(e) {
-			e.preventDefault();
-			menu.slideToggle();
-		});
-		$(window).resize(function(){
-			var w = $(window).width();
-			if(w > 320 && menu.is(':hidden')) {
-				menu.removeAttr('style');
-			}
-		});
-	});
-
-	var typed = new Typed('.typed', {
-		strings: ["de qualidade", "digital"],
-		typeSpeed: 60,
-		backSpeed: 50,
-		backDelay: 2000,
-		loop: true,
-		autoInsertCss: true
-	});
-</script>
+<script type="text/javascript" src="../node_modules/wowjs/dist//wow.js"></script>
+<script type="text/javascript" src="../node_modules/toastr/build/toastr.min.js"></script>
+<script type="text/javascript" src="../node_modules/typed.js/lib/typed.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+<!-- endbuild -->
 
 </body>
 </html>
