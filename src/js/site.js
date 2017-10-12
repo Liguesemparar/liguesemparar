@@ -35,6 +35,7 @@
 				success: function(data) {
 					toastr.clear()
 					toastr["success"]("Sua mensagem foi enviada com sucesso! Em breve entraremos em contato.")
+					$('#contact-form')[0].reset()
 				},
 				error: function(err) {
 					toastr.clear()
